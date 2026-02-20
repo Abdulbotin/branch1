@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
@@ -170,11 +171,29 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
   .mt-\[50px\] {
     margin-top: 50px;
   }
   .mt-\[60px\] {
     margin-top: 60px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .ml-\[50px\] {
+    margin-left: 50px;
+  }
+  .ml-\[100px\] {
+    margin-left: 100px;
+  }
+  .ml-\[150px\] {
+    margin-left: 150px;
   }
   .flex {
     display: flex;
@@ -191,14 +210,26 @@
   .h-\[0px\] {
     height: 0px;
   }
+  .h-\[1\] {
+    height: 1;
+  }
+  .h-\[5\] {
+    height: 5;
+  }
   .h-\[40px\] {
     height: 40px;
+  }
+  .h-\[52px\] {
+    height: 52px;
   }
   .h-\[100px\] {
     height: 100px;
   }
   .h-\[150px\] {
     height: 150px;
+  }
+  .h-\[193px\] {
+    height: 193px;
   }
   .h-\[220px\] {
     height: 220px;
@@ -208,6 +239,12 @@
   }
   .h-\[656px\] {
     height: 656px;
+  }
+  .w-\[1\] {
+    width: 1;
+  }
+  .w-\[38\] {
+    width: 38;
   }
   .w-\[76px\] {
     width: 76px;
@@ -230,6 +267,15 @@
   .w-\[109px\] {
     width: 109px;
   }
+  .w-\[164px\] {
+    width: 164px;
+  }
+  .w-\[193px\] {
+    width: 193px;
+  }
+  .w-\[386px\] {
+    width: 386px;
+  }
   .w-\[400px\] {
     width: 400px;
   }
@@ -244,6 +290,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -290,14 +339,30 @@
       margin-inline-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-20 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .rounded-\[2-6px\] {
     border-radius: 2-6px;
   }
   .rounded-\[2\] {
     border-radius: 2;
   }
+  .rounded-\[3\] {
+    border-radius: 3;
+  }
+  .rounded-\[8px\] {
+    border-radius: 8px;
+  }
   .rounded-\[26px\] {
     border-radius: 26px;
+  }
+  .rounded-\[35\] {
+    border-radius: 35;
   }
   .rounded-\[35px\] {
     border-radius: 35px;
@@ -328,6 +393,13 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
   .bg-\[\#24AB70\] {
     background-color: #24AB70;
   }
@@ -340,11 +412,23 @@
   .bg-\[\#FAFAFA\] {
     background-color: #FAFAFA;
   }
+  .pt-\[3\] {
+    padding-top: 3;
+  }
+  .pt-\[10\%\] {
+    padding-top: 10%;
+  }
   .pt-\[10px\] {
     padding-top: 10px;
   }
   .pt-\[20px\] {
     padding-top: 20px;
+  }
+  .pt-\[50\] {
+    padding-top: 50;
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
   }
   .pl-\[\%\] {
     padding-left: %;
@@ -361,6 +445,27 @@
   .pl-\[10px\] {
     padding-left: 10px;
   }
+  .pl-\[15\%\] {
+    padding-left: 15%;
+  }
+  .pl-\[20\%\] {
+    padding-left: 20%;
+  }
+  .pl-\[20\] {
+    padding-left: 20;
+  }
+  .pl-\[30\%\] {
+    padding-left: 30%;
+  }
+  .pl-\[35\%\] {
+    padding-left: 35%;
+  }
+  .pl-\[40\%\] {
+    padding-left: 40%;
+  }
+  .pl-\[50\%\] {
+    padding-left: 50%;
+  }
   .pl-\[50px\] {
     padding-left: 50px;
   }
@@ -376,6 +481,9 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -389,6 +497,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .lg\:ml-\[50px\] {
+    @media (width >= 64rem) {
+      margin-left: 50px;
+    }
   }
   .lg\:ml-\[300px\] {
     @media (width >= 64rem) {
